@@ -1,0 +1,27 @@
+    1   git config --global user.name "Hanna Zhurakivska"
+    2  git config --global user.email "zhurakivskaanna7@gmail.com"
+    3  git clone https://github.com/Zhurakivska/HW_10.git
+    4  cd HW_10/
+    5  touch text_ignore.txt
+    6  echo text_ignore.txt > .gitignore
+    7  vim .gitignore
+    8  git status
+    9  git add .gitignore 
+   10  git commit -m .gitignore 
+   11  touch main_test.txt
+   12  git add *
+   13  git commit -m text_ignore.txt 
+   14  git commit -m main_test.txt 
+   15  git checkout -b developer
+   16  touch develop_text.txt
+   17  git add develop_text.txt 
+   18  git commit -m develop_text.txt 
+   19  vim develop_text.txt 
+   20  git status
+   21  git add *
+   22  git commit -m develop_text.txt 
+   23  git checkout main
+   24  git merge developer 
+   25  git add *
+   26  git log
+   27  history > command_list.csv
